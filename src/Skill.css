@@ -1,0 +1,26 @@
+.project-image
+{
+    width: 150px;
+    height: 150px;
+}
+
+.project-description
+{
+    font-size: 13px;
+}
+
+.project-container
+{
+    -webkit-box-shadow: 3px 6px 11px 6px rgba(0,0,0,0.77); 
+    box-shadow: 3px 6px 11px 6px rgba(0,0,0,0.77);
+}
+
+.sub-skills
+{
+    display: inline-block;
+}
+
+.sub-skills > div
+{
+    margin: 5px;
+}
