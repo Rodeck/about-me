@@ -8,6 +8,11 @@ class Project extends Component {
     return require('./image1.png');
   }
   render() {
+    var buttons = new Array();
+    this.props.Data.Urls.forEach(b => {
+        buttons.push(<a href={b.Url}>{b.Desc}</a>);
+        buttons.push(<br></br>)
+    })
     return (
         <div className="project-container">
             <Row>
@@ -34,9 +39,7 @@ class Project extends Component {
                     </Row>
                     <Row>
                         <Col sm={12} className='controll-container'>
-                        <Button bsStyle="primary" bsSize="large">
-                            More info
-                        </Button>
+                            {buttons}
                         </Col>
                     </Row>
                 </Col>    

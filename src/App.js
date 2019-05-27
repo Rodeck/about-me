@@ -18,21 +18,26 @@ class App extends Component {
     this.projects = [
         {
           Name: "This web-app",
-          Image: "./image1.png",
+          Image: "./about-me.png",
           Description: "This app is a project on itself. It is build with react and so far doesn't have any backend api. You can see my tech-skills, read about me and see different projects of mine.",
-          Url: "https://pl.lipsum.com/feed/html"
+          Urls: [ {
+            Url: "https://github.com/Rodeck/about-me",
+            Desc: "GitHub" 
+          }]
         },
         {
-          Name: "Example project 2",
+          Name: "Procrastination killer",
           Image: "./image1.png",
-          Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dolor eu sapien pretium vulputate. Praesent sit amet felis quis nulla pretium aliquet non ac eros. Quisque eu ante et nulla vulputate tristique nec in turpis. Integer mi sapien, scelerisque at elementum nec, aliquam at nisi. Donec placerat facilisis tortor, non aliquet mauris molestie id. Etiam quis auctor quam, vel dictum mi. Nulla tincidunt aliquet lorem. Nullam ut laoreet mi. Duis sagittis dui gravida, rhoncus enim id, interdum ligula. Cras ultricies dolor at feugiat euismod.",
-          Url: "https://pl.lipsum.com/feed/html"
-        },
-        {
-          Name: "Example project 3",
-          Image: "./image1.png",
-          Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dolor eu sapien pretium vulputate. Praesent sit amet felis quis nulla pretium aliquet non ac eros. Quisque eu ante et nulla vulputate tristique nec in turpis. Integer mi sapien, scelerisque at elementum nec, aliquam at nisi. Donec placerat facilisis tortor, non aliquet mauris molestie id. Etiam quis auctor quam, vel dictum mi. Nulla tincidunt aliquet lorem. Nullam ut laoreet mi. Duis sagittis dui gravida, rhoncus enim id, interdum ligula. Cras ultricies dolor at feugiat euismod.",
-          Url: "https://pl.lipsum.com/feed/html"
+          Description: "Procrastination killer is application designed to maintain productivity. User can add so called todos, complete them and be rewarded. App will have graphical charts. Backend is written in .Net core C# (mayby with use of gRPC in future) and frontend Vue.js + Vuex + Vue Material.",
+          Urls: [ 
+            {
+              Url: "https://github.com/Rodeck/ProcrastinationKiller",
+              Desc: "Backend on GitHub"
+            }, 
+            {
+              Url: "https://github.com/Rodeck/proc-killer-web",
+              Desc: "Frontend on GitHub"
+            }]
         }
     ]
     this.loadContent = this.loadContent.bind(this);
